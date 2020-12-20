@@ -168,17 +168,17 @@ public class Modelo {
         System.out.println("Erros absolutos "+ (calculaMAE(Y_predicao_treino, Y_treino) * Y_treino.length) + " de " + Y_treino.length);
         System.out.println("Acuracia de teste " + (100 - calculaMAE(Y_predicao_teste, Y_teste) * 100) + "%"); 
         System.out.println("Erros absolutos "+ (calculaMAE(Y_predicao_teste, Y_teste) * Y_teste.length) + " de " + Y_teste.length);
-        for(int i=0;i<Y_treino.length;i++){
-            int acerto = 0;
-            if( Y_predicao_treino[i] == Y_treino[i] ){
-                acerto += 1;
-            }
+//        for(int i=0;i<Y_treino.length;i++){
+//            int acerto = 0;
+//            if( Y_predicao_treino[i] == Y_treino[i] ){
+//                acerto += 1;
+//            }
 //            if( Y_predicao_treino[i] == 0){
 //                System.out.println("Deu zero");
 //            }
-            System.out.println("Teste " + i + " predição = " + Y_predicao_treino[i] + " valor real = " + Y_treino[i] + " resultado:" + acerto + " acertos"); 
-            
-        }
+//            System.out.println("Teste " + i + " predição = " + Y_predicao_treino[i] + " valor real = " + Y_treino[i] + " resultado:" + acerto + " acertos"); 
+//            
+//        }
     }
 
     /**
